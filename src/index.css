@@ -1,0 +1,27 @@
+@import "tailwindcss";
+:root {
+  /* font-family: system-ui, Avenir, Helvetica, Arial, sans-serif; */
+  /* line-height: 1.5; */
+  /* font-weight: 400; */
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+@font-face {
+  font-family: "Playfair Display";
+  src: url("./assets/fonts/Playfair_Display/PlayfairDisplay-Italic-VariableFont_wght.ttf")
+    format("truetype");
+}
+html {
+  font-family: Playfair Display;
+  background-color: #3030301e;
+  scroll-behavior: smooth;
+  transition: all 0.5s ease-in-out;
+}
+button {
+  cursor: pointer;
+  padding: 13px 13px;
+  border-radius: 0.7em;
+  font-weight: bold;
+}
