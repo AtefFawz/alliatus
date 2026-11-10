@@ -4,6 +4,7 @@ import { About } from "@/features/landing/components/about";
 import { Apply } from "@/features/landing/components/apply";
 import { Guidance } from "@/features/landing/components/guidance";
 import { Faq } from "@/features/landing/components/faq";
+import { Facilitators } from "@/features/landing/components/facilitators";
 import { Hero } from "@/features/landing/components/hero";
 import { Pricing } from "@/features/landing/components/pricing";
 import { CirclePrinciples } from "@/features/landing/components/circle-principles";
@@ -25,6 +26,7 @@ export default function App() {
         <Works />
         <CirclePrinciples />
         <Guidance />
+        <Facilitators />
         <Pricing />
         <Faq />
         <Apply />

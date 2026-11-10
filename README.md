@@ -10,7 +10,7 @@ Alliatus is a polished front-end product concept for a curated mastermind-circle
 - Responsive navigation with scroll-aware active states and an accessible mobile menu.
 - Light, dark, and system theme support, persisted across visits and synchronized across tabs.
 - Scroll reveal and staggered motion using Motion, with reduced-motion support.
-- Product story, proposed member journey, circle principles, guidance model, illustrative plans, and concept FAQ.
+- Product story, proposed member journey, circle principles, guidance model, four clearly labelled fictional facilitator profiles, illustrative plans, and concept FAQ.
 - Accessible application form with Zod validation, field-level errors, pending state, a honeypot, and a pluggable HTTPS endpoint.
 - Demo form feedback that clearly states no personal information was transmitted or saved.
 - Self-hosted Inter and Playfair Display fonts, optimized WebP assets, and metadata for sharing.
@@ -102,7 +102,7 @@ The included GitHub Actions workflow deploys `dist/` to GitHub Pages when change
 
 ## Content and launch checklist
 
-Before presenting this as a real service, replace the illustrative plan amounts and features, publish real facilitator information only with consent, add verified member stories, configure the application endpoint, publish a privacy policy and terms, and connect a real payment/membership workflow. The current UI intentionally avoids fabricated ratings, member counts, testimonials, or staff profiles.
+Before presenting this as a real service, replace the illustrative plan amounts and features, replace the four fictional facilitator profiles with verified information only with each person’s consent, add verified member stories, configure the application endpoint, publish a privacy policy and terms, and connect a real payment/membership workflow. The facilitator section is intentionally labelled as sample content; the UI does not claim that these people are active staff.
 
 ## License
 

@@ -2,7 +2,8 @@
 
 ## Product integrity
 
-- Removed unsupported average ratings, user-count metrics, fabricated testimonial quotes, named facilitator profiles, and generic social-profile links.
+- Removed unsupported average ratings, user-count metrics, fabricated testimonial quotes, and generic social-profile links.
+- Restored the facilitator section as four explicitly fictional sample profiles, with a visible demo notice and replaceable typed data.
 - Replaced social proof with clearly authored product principles and a transparent explanation of the intended guidance model.
 - Marked plans and pricing as illustrative concept data; no checkout or payment flow is implied.
 - Updated FAQs so they describe the proposed product experience instead of promising live services that do not exist.
@@ -28,7 +29,7 @@
 
 ## Performance and maintainability
 
-- Removed obsolete testimonial/facilitator image assets from the runtime bundle.
+- Kept only the four optimized facilitator portraits used by the sample profile section; obsolete testimonial assets remain excluded from the runtime bundle.
 - Consolidated site configuration and removed placeholder social URLs.
 - Converted retained photography to WebP and removed unused profile imagery and stale screenshots.
 - Updated page metadata and documentation to reflect the actual static-demo capabilities.

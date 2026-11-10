@@ -16,14 +16,14 @@ export function Header() {
     <header className="sticky top-0 z-50 border-b border-border/60 bg-background/80 backdrop-blur-xl">
       <Container className="relative flex h-18 items-center justify-between gap-6">
         <Logo />
-        <nav aria-label="Primary" className="hidden items-center gap-1 md:flex">
+        <nav aria-label="Primary" className="hidden items-center gap-0.5 lg:flex">
           {sectionNav.map((item) => (
             <a
               key={item.id}
               href={`#${item.id}`}
               aria-current={active === item.id ? "location" : undefined}
               className={cn(
-                "rounded-full px-3 py-2 text-sm font-semibold transition-colors lg:px-4",
+                "rounded-full px-2.5 py-2 text-xs font-semibold transition-colors xl:px-3 xl:text-sm",
                 active === item.id
                   ? "bg-accent text-on-accent"
                   : "text-muted hover:text-foreground",
@@ -40,7 +40,7 @@ export function Header() {
             size="sm"
             aria-current={active === "apply" ? "location" : undefined}
             className={cn(
-              "hidden md:inline-flex",
+              "hidden xl:inline-flex",
               active === "apply" && "ring-2 ring-offset-2 ring-foreground",
             )}
           >
