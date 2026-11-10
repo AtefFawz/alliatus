@@ -2,12 +2,38 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>alliatus</title>
+    <meta name="color-scheme" content="light dark" />
+    <title>Alliatus — Thoughtful mastermind circles</title>
+    <meta
+      name="description"
+      content="Explore Alliatus, a portfolio concept for small mastermind circles built around thoughtful conversations, peer perspective, and shared accountability."
+    />
+    <meta name="theme-color" content="#f6f3ec" media="(prefers-color-scheme: light)" />
+    <meta name="theme-color" content="#161513" media="(prefers-color-scheme: dark)" />
+    <link rel="icon" type="image/svg+xml" href="%BASE_URL%favicon.svg" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Alliatus" />
+    <meta property="og:title" content="Alliatus — Thoughtful mastermind circles" />
+    <meta
+      property="og:description"
+      content="A product concept for small circles, honest conversations, and shared progress."
+    />
+    <script>
+      // Apply the saved theme before first paint to avoid a flash.
+      try {
+        var savedTheme = localStorage.getItem("alliatus-theme");
+        var prefersDark = matchMedia("(prefers-color-scheme: dark)").matches;
+        var hasExplicitTheme = savedTheme === "light" || savedTheme === "dark";
+        var shouldUseDark = savedTheme === "dark" || (!hasExplicitTheme && prefersDark);
+        document.documentElement.classList.toggle("dark", shouldUseDark);
+      } catch {
+        // The CSS light theme remains the safe fallback when storage is unavailable.
+      }
+    </script>
   </head>
   <body>
     <div id="root"></div>
-    <script type="module" src="/src/main.jsx"></script>
+    <script type="module" src="/src/main.tsx"></script>
   </body>
 </html>
