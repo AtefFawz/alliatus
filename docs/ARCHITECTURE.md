@@ -15,6 +15,7 @@ App
 │   ├── Works
 │   ├── Circle principles
 │   ├── Guidance model
+│   ├── Facilitator sample profiles
 │   ├── Illustrative Pricing
 │   ├── FAQ
 │   └── Apply
@@ -26,7 +27,7 @@ App
 
 ### `features/landing`
 
-Owns the landing-page sections, typed copy, and pricing calculations. Components remain presentational; data and pure calculation logic live outside the JSX.
+Owns the landing-page sections, typed copy, and pricing calculations. Components remain presentational; data and pure calculation logic live outside the JSX. The facilitator section uses four explicitly fictional sample profiles and optimized local portraits to demonstrate the intended layout without implying a real staff directory.
 
 ### `features/apply`
 

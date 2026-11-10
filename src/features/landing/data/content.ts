@@ -1,5 +1,9 @@
 import aboutImage from "@/assets/about/about.webp";
 import faqImage from "@/assets/faq/faq.webp";
+import amiraPortrait from "@/assets/facilitators/amira.webp";
+import elenaPortrait from "@/assets/facilitators/elena.webp";
+import jasonPortrait from "@/assets/facilitators/jason.webp";
+import lucasPortrait from "@/assets/facilitators/lucas.webp";
 import heroImage from "@/assets/home/hero.webp";
 import forYou from "@/assets/work/for-you.webp";
 import member from "@/assets/work/member.webp";
@@ -45,8 +49,7 @@ export const steps: Step[] = [
   {
     number: "01",
     title: "Share your goals",
-    description:
-      "Explore the application flow and describe the kind of peer support you are looking for.",
+    description: "Explore the application flow and describe the kind of peer support you are looking for.",
   },
   {
     number: "02",
@@ -108,6 +111,59 @@ export const audiences: Audience[] = [
     image: notForYou,
     alt: "A person working alone at a laptop",
     highlighted: false,
+  },
+];
+
+/**
+ * Fictional sample profiles used to demonstrate the proposed facilitator section.
+ * Replace these personas and portraits with consented, verified information before launch.
+ */
+export interface FacilitatorProfile {
+  name: string;
+  role: string;
+  bio: string;
+  focus: string[];
+  image: string;
+  imageAlt: string;
+  number: string;
+}
+
+export const facilitatorProfiles: FacilitatorProfile[] = [
+  {
+    number: "01",
+    name: "Amira Sullivan",
+    role: "Creative Strategy & Group Facilitation",
+    bio: "Creates room for different perspectives and keeps every conversation focused, welcoming, and useful.",
+    focus: ["Conversation design", "Creative thinking"],
+    image: amiraPortrait,
+    imageAlt: "Portrait used for the fictional sample profile of Amira Sullivan",
+  },
+  {
+    number: "02",
+    name: "Lucas Varela",
+    role: "Accountability & Sustainable Momentum",
+    bio: "Turns ambitious plans into clear commitments and helps peers follow through without adding pressure.",
+    focus: ["Goal clarity", "Weekly momentum"],
+    image: lucasPortrait,
+    imageAlt: "Portrait used for the fictional sample profile of Lucas Varela",
+  },
+  {
+    number: "03",
+    name: "Elena Morozova",
+    role: "Reflection & Community Building",
+    bio: "Uses thoughtful prompts to challenge assumptions and help members see their next move more clearly.",
+    focus: ["Guided reflection", "Peer connection"],
+    image: elenaPortrait,
+    imageAlt: "Portrait used for the fictional sample profile of Elena Morozova",
+  },
+  {
+    number: "04",
+    name: "Jason Kim",
+    role: "Strategy & Practical Growth",
+    bio: "Connects strategic thinking with small experiments, helping ideas move from conversation into action.",
+    focus: ["Strategic clarity", "Practical action"],
+    image: jasonPortrait,
+    imageAlt: "Portrait used for the fictional sample profile of Jason Kim",
   },
 ];
 

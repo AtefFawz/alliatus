@@ -12,6 +12,7 @@ export const sectionNav = [
   { id: "works", label: "How it works" },
   { id: "circle", label: "The circle" },
   { id: "guidance", label: "Guidance" },
+  { id: "facilitators", label: "Facilitators" },
   { id: "pricing", label: "Plans" },
   { id: "faq", label: "FAQ" },
 ] as const;
